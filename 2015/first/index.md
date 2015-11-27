@@ -15,7 +15,7 @@
 | :------------ | :------------------------------------ | :------------- |
 | 18:30 - 18:45 | Chat                                  |                |
 | 18:45 - 19:15 | [SOLVCON Mesh](#mesh)                 | Yung-Yu Chen   |
-| 19:15 - 19:45 | TBD                                   | You-Hao Chang  |
+| 19:15 - 19:45 | [As a beginner](#beginner)            | You-Hao Chang  |
 | 19:45 - 20:15 | [Design of the Probe Feature](#probe) | Taihsiang Ho   |
 | 20:15 - 20:30 | Wrap-up                               |                |
 
@@ -33,9 +33,14 @@ for parallel computing, the speaker will explain how to use a graph partitioner
 to separate the globally connected mesh and minimize the inter-connection
 between split domains.
 
-### TBD
+###<a name="beginner"></a> As a beginner
 
 By You-Hao Chang
+
+In the beginning of being a contributor, it is always useful for people to 
+know what kind of background knowledge we shall have. This talk will focus 
+on introducing the pre-work of contributing SOLVCON and also show plenty of
+ material for learning the numerical field.
 
 ### <a name="probe"></a> Design of the Probe Feature
 
