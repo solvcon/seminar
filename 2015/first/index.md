@@ -15,7 +15,7 @@
 | :------------ | :------------------------------------ | :------------- |
 | 18:30 - 18:45 | Chat                                  |                |
 | 18:45 - 19:15 | [SOLVCON Mesh](#mesh)                 | Yung-Yu Chen   |
-| 19:15 - 19:45 | TBD                                   | You-Hao Chang  |
+| 19:15 - 19:45 | [As a beginner](#beginner)            | You-Hao Chang  |
 | 19:45 - 20:15 | [Design of the Probe Feature](#probe) | Taihsiang Ho   |
 | 20:15 - 20:30 | Wrap-up                               |                |
 
