@@ -33,9 +33,14 @@ for parallel computing, the speaker will explain how to use a graph partitioner
 to separate the globally connected mesh and minimize the inter-connection
 between split domains.
 
-### TBD
+###<a name="beginner"></a> As a beginner
 
 By You-Hao Chang
+
+In the beginning of being a contributor, it is always useful for people to 
+know what kind of background knowledge we shall have. This talk will focus 
+on introducing the pre-work of contributing SOLVCON and also show plenty of
+ material for learning the numerical field.
 
 ### <a name="probe"></a> Design of the Probe Feature
 
