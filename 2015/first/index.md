@@ -34,6 +34,8 @@ for parallel computing, the speaker will explain how to use a graph partitioner
 to separate the globally connected mesh and minimize the inter-connection
 between split domains.
 
+[Slides](https://www.dropbox.com/s/z9agz128qjubi81/solvcon_mesh.pdf?dl=0)
+
 ###<a name="beginner"></a> As a Beginner
 
 By You-Hao Chang
@@ -51,3 +53,5 @@ The probe feature could only dump the physics data at the end of the whole
 march. This talk is going to introduce how the current probe feature to fit the
 current loop structure of the march, and what is the possible roadmap to
 enhance this feature.
+
+[Slides](https://www.dropbox.com/s/lf5uf25fotq4m63/tai271828-Design_of_the_Probe_Feature.pdf?dl=0)
