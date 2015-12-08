@@ -8,6 +8,7 @@
 * When: 18:30-20:30
 * This event will be held together with
   [Taipei Open Source Software User Group (TOSSUG)](http://www.tossug.org/)
+* [Sign-up sheet](https://github.com/solvcon/seminar/issues/6)
 
 ## Agenda
 
