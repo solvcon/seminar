@@ -1,30 +1,40 @@
-<head><title>2017 SOLVCON Bootcamp (Draft)</title></head>
+<head><title>2017 SOLVCON Bootcamp</title></head>
 
-# SOLVCON Bootcamp (Draft)
+# SOLVCON Bootcamp
 
 In this event, participants will be guided to set up SOLVCON on Linux and run
 the most basic example.  [Markdown version of this
 page](https://github.com/solvcon/seminar/blob/gh-pages/2017/bootcamp/index.md)
 
 * Where: TBD
-* When: aa:bb-xx:yy
-* [Sign-up sheet](https://github.com/solvcon/seminar/issues/7): It's an issue
-  on Github.  Please create an account on [Github](https://github.com/) and
-  leave a message in it for sign-up.
+* When: (tentative) 2017/12/8 15:30-18:30
+* Instructor: [Yung-Yu Chen](mailto:yyc@solvcon.net), Taihsiang Ho
+* [Sign-up sheet](https://github.com/solvcon/seminar/issues/7).  Please create
+  a Github account (assuming you don't have one yet) and leave a message to
+  sign up.
 
-## Handout
+Last updated: 2017/11/25
 
-SOLVCON needs a Unix-like system.  We have tested Linux (Ubuntu 14.04 LTS) and
-mac osx and this lab assumes there is a Ubuntu Linux box.
+## <a name="intro"></a> Introduction
 
-Learning points:
+SOLVCON needs a Unix-like system.  This bootcamp uses Ubuntu 14.04 Linux.
+Afterwards you may also run it on mac osx on which SOLVCON is being actively
+developed.
 
-* Linux and remote terminal
-* Git
-* Anaconda
-* Building using distutils and cmake
+| Time          | Topic                             |
+| :------------ | :-------------------------------- |
+| 15:30 - 15:40 | [Overview & Introduction](#intro) |
+| 15:40 - 16:00 | [SSH Remote Login](#ssh)          |
+| 16:00 - 16:20 | [Git Basic](#git)                 |
+| 16:20 - 16:30 | (No-coffee) break                 |
+| 16:30 - 16:55 | [Install Anaconda](#conda)        |
+| 16:55 - 17:20 | [Development Environment](#de)    |
+| 17:20 - 17:30 | (No-coffee) break                 |
+| 17:30 - 17:55 | [Build SOLVCON](#build)           |
+| 17:55 - 18:20 | [Run a Case](#run)                |
+| 18:20 - 18:30 | Q & A                             |
 
-### SSH Remote Login
+## <a name="ssh"></a> SSH Remote Login
 
 A computational software package like SOLVCON usually needs powerful
 workstations to crunch numbers.  Development and maintenance of SOLVCON require
@@ -35,7 +45,7 @@ We use a client-server architecture called "secure shell" (SSH).  The Linux
 workstation has a SSH daemon configured and we may connect to it using a SSH
 client.
 
-* Windows: https://www.chiark.greenend.org.uk/~sgtatham/putty/
+* Windows: [https://www.chiark.greenend.org.uk/~sgtatham/putty/](https://www.chiark.greenend.org.uk/~sgtatham/putty/)
 * Linux and mac osx: system-provided "ssh" command.
 
 ACTION: install or find the SSH client on your system, and try to run it
@@ -50,7 +60,7 @@ Instructor will provide you the following information:
 ACTION: use your SSH client to connect to the host.  Once successful, you may
 see your username in the shell command prompt.
 
-### Set up User Environment: Git Basic
+## <a name="git"></a> Set up User Environment: Git Basic
 
 We practice basic usage of Git.  After you log into the account you have only
 the basic environment setup.  Follow the steps to clone a Git repository and
@@ -77,7 +87,7 @@ git checkout -- .
 
 ACTION: relogin.  You may see the shell prompt becomes different.
 
-### Install Anaconda
+## <a name="conda"></a> Install Anaconda
 
 SOLVCON depends on many third-party software packages.  Because SOLVCON needs
 to support both Linux and mac osx, using the OS-provided package manager isn't
@@ -106,7 +116,7 @@ enabled, turn it on to save installation time:
 conda config --system --add channels file:///var/opt/conda3/packages
 ```
 
-### Use Anaconda to Create Development Environment
+## <a name="de"></a> Use Anaconda to Create Development Environment
 
 Now we get the SOLVCON source repository.  In your home directory run the
 following command:
@@ -128,7 +138,7 @@ contrib/devenv/create.sh
 It creates a conda environment in `build/env/`.  Now run `source
 build/env/start` to enable the SOLVCON-specific conda environment.
 
-### Build SOLVCON and Run Tests
+## <a name="build"></a> Build SOLVCON and Run Tests
 
 Before building SOLVCON we need to install the third-party packages it depends
 on.  In the devenv, we install SOLVCON dependency using the following script:
@@ -168,7 +178,7 @@ env BOTO_CONFIG=/tmp/nowhere nosetests --with-doctest
 After the unit tests, also run a basic test for the gas-dynamic solver in
 SOLVCON:
 
-```base
+```bash
 nosetests ftests/gasplus/*
 ```
 
@@ -177,10 +187,7 @@ At this point SOLVCON is built and tested with the regression tests.
 You may see a terse version of the above description at [SOLVCON
 README](https://github.com/solvcon/solvcon/blob/master/README.rst).
 
-### Run Shock Tube Problem
-
-Install [ParaView](https://www.paraview.org).  SOLVCON outputs simulation
-results as VTK files that can be visualized using ParaView.
+## <a name="run"></a> Run Shock Tube Problem
 
 Enter the gas-dynamic functional test directory:
 
@@ -195,4 +202,4 @@ python test_tube_2d_triangle_regular.py run tube_2d_triangle_regular_run
 ```
 
 It produces a directory named `tube_2d_triangle_regular_run/`, which contains
-the result VTK files.  Use ParaView to play with them.
+the result VTK files.  Use [ParaView](https://www.paraview.org) to view them.

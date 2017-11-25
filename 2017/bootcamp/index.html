@@ -1,6 +1,6 @@
-<p><head><title>2017 SOLVCON Bootcamp (Draft)</title></head></p>
+<p><head><title>2017 SOLVCON Bootcamp</title></head></p>
 
-<h1>SOLVCON Bootcamp (Draft)</h1>
+<h1>SOLVCON Bootcamp</h1>
 
 <p>In this event, participants will be guided to set up SOLVCON on Linux and run
 the most basic example.  <a href="https://github.com/solvcon/seminar/blob/gh-pages/2017/bootcamp/index.md">Markdown version of this
@@ -8,27 +8,73 @@ page</a></p>
 
 <ul>
 <li>Where: TBD</li>
-<li>When: aa:bb-xx:yy</li>
-<li><a href="https://github.com/solvcon/seminar/issues/7">Sign-up sheet</a>: It's an issue
-on Github.  Please create an account on <a href="https://github.com/">Github</a> and
-leave a message in it for sign-up.</li>
+<li>When: (tentative) 2017/12/8 15:30-18:30</li>
+<li>Instructor: <a href="mailto:yyc@solvcon.net">Yung-Yu Chen</a>, Taihsiang Ho</li>
+<li><a href="https://github.com/solvcon/seminar/issues/7">Sign-up sheet</a>.  Please create
+a Github account (assuming you don't have one yet) and leave a message to
+sign up.</li>
 </ul>
 
-<h2>Handout</h2>
+<p>Last updated: 2017/11/25</p>
 
-<p>SOLVCON needs a Unix-like system.  We have tested Linux (Ubuntu 14.04 LTS) and
-mac osx and this lab assumes there is a Ubuntu Linux box.</p>
+<h2><a name="intro"></a> Introduction</h2>
 
-<p>Learning points:</p>
+<p>SOLVCON needs a Unix-like system.  This bootcamp uses Ubuntu 14.04 Linux.
+Afterwards you may also run it on mac osx on which SOLVCON is being actively
+developed.</p>
 
-<ul>
-<li>Linux and remote terminal</li>
-<li>Git</li>
-<li>Anaconda</li>
-<li>Building using distutils and cmake</li>
-</ul>
+<table>
+<thead>
+<tr>
+  <th align="left">Time</th>
+  <th align="left">Topic</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td align="left">15:30 - 15:40</td>
+  <td align="left"><a href="#intro">Overview &amp; Introduction</a></td>
+</tr>
+<tr>
+  <td align="left">15:40 - 16:00</td>
+  <td align="left"><a href="#ssh">SSH Remote Login</a></td>
+</tr>
+<tr>
+  <td align="left">16:00 - 16:20</td>
+  <td align="left"><a href="#git">Git Basic</a></td>
+</tr>
+<tr>
+  <td align="left">16:20 - 16:30</td>
+  <td align="left">(No-coffee) break</td>
+</tr>
+<tr>
+  <td align="left">16:30 - 16:55</td>
+  <td align="left"><a href="#conda">Install Anaconda</a></td>
+</tr>
+<tr>
+  <td align="left">16:55 - 17:20</td>
+  <td align="left"><a href="#de">Development Environment</a></td>
+</tr>
+<tr>
+  <td align="left">17:20 - 17:30</td>
+  <td align="left">(No-coffee) break</td>
+</tr>
+<tr>
+  <td align="left">17:30 - 17:55</td>
+  <td align="left"><a href="#build">Build SOLVCON</a></td>
+</tr>
+<tr>
+  <td align="left">17:55 - 18:20</td>
+  <td align="left"><a href="#run">Run a Case</a></td>
+</tr>
+<tr>
+  <td align="left">18:20 - 18:30</td>
+  <td align="left">Q &amp; A</td>
+</tr>
+</tbody>
+</table>
 
-<h3>SSH Remote Login</h3>
+<h2><a name="ssh"></a> SSH Remote Login</h2>
 
 <p>A computational software package like SOLVCON usually needs powerful
 workstations to crunch numbers.  Development and maintenance of SOLVCON require
@@ -40,7 +86,7 @@ workstation has a SSH daemon configured and we may connect to it using a SSH
 client.</p>
 
 <ul>
-<li>Windows: https://www.chiark.greenend.org.uk/~sgtatham/putty/</li>
+<li>Windows: <a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/">https://www.chiark.greenend.org.uk/~sgtatham/putty/</a></li>
 <li>Linux and mac osx: system-provided "ssh" command.</li>
 </ul>
 
@@ -58,7 +104,7 @@ client.</p>
 <p>ACTION: use your SSH client to connect to the host.  Once successful, you may
 see your username in the shell command prompt.</p>
 
-<h3>Set up User Environment: Git Basic</h3>
+<h2><a name="git"></a> Set up User Environment: Git Basic</h2>
 
 <p>We practice basic usage of Git.  After you log into the account you have only
 the basic environment setup.  Follow the steps to clone a Git repository and
@@ -66,26 +112,23 @@ use the files in it to set up your account.</p>
 
 <p>ACTION: clone a repository to your home directory.</p>
 
-<p><code>bash
-git clone https://github.com/yungyuc/workspace
-</code></p>
+<div class="codehilite"><pre><span></span><code>git clone https://github.com/yungyuc/workspace
+</code></pre></div>
 
 <p>ACTION: move the clone repository to home.</p>
 
-<p><code>bash
-mv workspace/.git ~/
-</code></p>
+<div class="codehilite"><pre><span></span><code>mv workspace/.git ~/
+</code></pre></div>
 
 <p>ACTION: check out the repository to update your home directory.</p>
 
-<p><code>bash
-cd ~
+<div class="codehilite"><pre><span></span><code><span class="nb">cd</span> ~
 git checkout -- .
-</code></p>
+</code></pre></div>
 
 <p>ACTION: relogin.  You may see the shell prompt becomes different.</p>
 
-<h3>Install Anaconda</h3>
+<h2><a name="conda"></a> Install Anaconda</h2>
 
 <p>SOLVCON depends on many third-party software packages.  Because SOLVCON needs
 to support both Linux and mac osx, using the OS-provided package manager isn't
@@ -95,9 +138,8 @@ for managing third-party packages.</p>
 <p>The course server has downloaded an installer for you.  Execute the following
 command to use it to install Anaconda:</p>
 
-<p><code>bash
-bash /var/opt/conda3/packages/Miniconda3-latest-Linux-x86_64.sh
-</code></p>
+<div class="codehilite"><pre><span></span><code>bash /var/opt/conda3/packages/Miniconda3-latest-Linux-x86_64.sh
+</code></pre></div>
 
 <p>Note:</p>
 
@@ -112,18 +154,16 @@ fewer bundled packages.</li>
 <p>The course server also caches some packages.  After Anaconda is installed and
 enabled, turn it on to save installation time:</p>
 
-<p><code>bash
-conda config --system --add channels file:///var/opt/conda3/packages
-</code></p>
+<div class="codehilite"><pre><span></span><code>conda config --system --add channels file:///var/opt/conda3/packages
+</code></pre></div>
 
-<h3>Use Anaconda to Create Development Environment</h3>
+<h2><a name="de"></a> Use Anaconda to Create Development Environment</h2>
 
 <p>Now we get the SOLVCON source repository.  In your home directory run the
 following command:</p>
 
-<p><code>bash
-git clone https://github.com/solvcon/solvcon
-</code></p>
+<div class="codehilite"><pre><span></span><code>git clone https://github.com/solvcon/solvcon
+</code></pre></div>
 
 <p>Git will clone the main SOLVCON repository to your <code>~/solvcon/</code>.  Change
 working directory in it.</p>
@@ -131,78 +171,66 @@ working directory in it.</p>
 <p>Anaconda supports creating independent runtime.  We use this feature to
 segregate Python runtime for developing SOLVCON.  Run:</p>
 
-<p><code>bash
-contrib/devenv/create.sh
-</code></p>
+<div class="codehilite"><pre><span></span><code>contrib/devenv/create.sh
+</code></pre></div>
 
 <p>It creates a conda environment in <code>build/env/</code>.  Now run <code>source
 build/env/start</code> to enable the SOLVCON-specific conda environment.</p>
 
-<h3>Build SOLVCON and Run Tests</h3>
+<h2><a name="build"></a> Build SOLVCON and Run Tests</h2>
 
 <p>Before building SOLVCON we need to install the third-party packages it depends
 on.  In the devenv, we install SOLVCON dependency using the following script:</p>
 
-<p><code>bash
-contrib/conda.sh
-</code></p>
+<div class="codehilite"><pre><span></span><code>contrib/conda.sh
+</code></pre></div>
 
 <p>Te above script uses <code>conda</code> and <code>pip</code> to install dependency.  Another
 dependent package, pybind11, needs special treatment and there's a specific
 script to install it:</p>
 
-<p><code>bash
-contrib/build-pybind11-in-conda.sh
-</code></p>
+<div class="codehilite"><pre><span></span><code>contrib/build-pybind11-in-conda.sh
+</code></pre></div>
 
 <p>To this point we are ready to build SOLVCON.  Run:</p>
 
-<p><code>bash
-python setup.py build_ext --inplace
-</code></p>
+<div class="codehilite"><pre><span></span><code>python setup.py build_ext --inplace
+</code></pre></div>
 
 <p>After SOLVCON is built, run the unit tests:</p>
 
-<p><code>bash
-nosetests --with-doctest
-</code></p>
+<div class="codehilite"><pre><span></span><code>nosetests --with-doctest
+</code></pre></div>
 
 <p>You may find a couple of errors regarding "boto".  It is caused by the course
 server configuration.  It can be remedied by telling nose to ignore the server
 configuration:</p>
 
-<p><code>bash
-env BOTO_CONFIG=/tmp/nowhere nosetests --with-doctest
-</code></p>
+<div class="codehilite"><pre><span></span><code>env <span class="nv">BOTO_CONFIG</span><span class="o">=</span>/tmp/nowhere nosetests --with-doctest
+</code></pre></div>
 
 <p>After the unit tests, also run a basic test for the gas-dynamic solver in
 SOLVCON:</p>
 
-<p><code>base
-nosetests ftests/gasplus/*
-</code></p>
+<div class="codehilite"><pre><span></span><code>nosetests ftests/gasplus/*
+</code></pre></div>
 
 <p>At this point SOLVCON is built and tested with the regression tests.</p>
 
 <p>You may see a terse version of the above description at <a href="https://github.com/solvcon/solvcon/blob/master/README.rst">SOLVCON
 README</a>.</p>
 
-<h3>Run Shock Tube Problem</h3>
-
-<p>Install <a href="https://www.paraview.org">ParaView</a>.  SOLVCON outputs simulation
-results as VTK files that can be visualized using ParaView.</p>
+<h2><a name="run"></a> Run Shock Tube Problem</h2>
 
 <p>Enter the gas-dynamic functional test directory:</p>
 
-<p><code>bash
-cd ftests/gasplus
-</code></p>
+<div class="codehilite"><pre><span></span><code><span class="nb">cd</span> ftests/gasplus
+</code></pre></div>
 
 <p>And run the test case in the script mode:</p>
 
-<p><code>bash
-python test_tube_2d_triangle_regular.py run tube_2d_triangle_regular_run
-</code></p>
+<div class="codehilite"><pre><span></span><code>python test_tube_2d_triangle_regular.py run tube_2d_triangle_regular_run
+</code></pre></div>
 
 <p>It produces a directory named <code>tube_2d_triangle_regular_run/</code>, which contains
-the result VTK files.  Use ParaView to play with them.</p>
+the result VTK files.  Use <a href="https://www.paraview.org">ParaView</a> to view them.</p>
