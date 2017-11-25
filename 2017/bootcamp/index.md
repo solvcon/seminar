@@ -1,10 +1,9 @@
-<head><title>2017 SOLVCON Bootcamp</title></head>
-
 # SOLVCON Bootcamp
 
 In this event, participants will be guided to set up SOLVCON on Linux and run
-the most basic example.  [Markdown version of this
-page](https://github.com/solvcon/seminar/blob/gh-pages/2017/bootcamp/index.md)
+the most basic example.
+[Markdown version](https://github.com/solvcon/seminar/blob/gh-pages/2017/bootcamp/index.md)
+of this page.
 
 * Where: TBD
 * When: (tentative) 2017/12/8 15:30-18:30
@@ -15,7 +14,7 @@ page](https://github.com/solvcon/seminar/blob/gh-pages/2017/bootcamp/index.md)
 
 Last updated: 2017/11/25
 
-## <a name="intro"></a> Introduction
+## <a name="intro"></a>Introduction
 
 SOLVCON needs a Unix-like system.  This bootcamp uses Ubuntu 14.04 Linux.
 Afterwards you may also run it on mac osx on which SOLVCON is being actively
@@ -34,7 +33,7 @@ developed.
 | 17:55 - 18:20 | [Run a Case](#run)                |
 | 18:20 - 18:30 | Q & A                             |
 
-## <a name="ssh"></a> SSH Remote Login
+## <a name="ssh"></a>SSH Remote Login
 
 A computational software package like SOLVCON usually needs powerful
 workstations to crunch numbers.  Development and maintenance of SOLVCON require
@@ -60,7 +59,7 @@ Instructor will provide you the following information:
 ACTION: use your SSH client to connect to the host.  Once successful, you may
 see your username in the shell command prompt.
 
-## <a name="git"></a> Set up User Environment: Git Basic
+## <a name="git"></a>Set up User Environment: Git Basic
 
 We practice basic usage of Git.  After you log into the account you have only
 the basic environment setup.  Follow the steps to clone a Git repository and
@@ -87,7 +86,7 @@ git checkout -- .
 
 ACTION: relogin.  You may see the shell prompt becomes different.
 
-## <a name="conda"></a> Install Anaconda
+## <a name="conda"></a>Install Anaconda
 
 SOLVCON depends on many third-party software packages.  Because SOLVCON needs
 to support both Linux and mac osx, using the OS-provided package manager isn't
@@ -116,7 +115,7 @@ enabled, turn it on to save installation time:
 conda config --system --add channels file:///var/opt/conda3/packages
 ```
 
-## <a name="de"></a> Use Anaconda to Create Development Environment
+## <a name="de"></a>Use Anaconda to Create Development Environment
 
 Now we get the SOLVCON source repository.  In your home directory run the
 following command:
@@ -138,7 +137,7 @@ contrib/devenv/create.sh
 It creates a conda environment in `build/env/`.  Now run `source
 build/env/start` to enable the SOLVCON-specific conda environment.
 
-## <a name="build"></a> Build SOLVCON and Run Tests
+## <a name="build"></a>Build SOLVCON and Run Tests
 
 Before building SOLVCON we need to install the third-party packages it depends
 on.  In the devenv, we install SOLVCON dependency using the following script:
@@ -187,7 +186,7 @@ At this point SOLVCON is built and tested with the regression tests.
 You may see a terse version of the above description at [SOLVCON
 README](https://github.com/solvcon/solvcon/blob/master/README.rst).
 
-## <a name="run"></a> Run Shock Tube Problem
+## <a name="run"></a>Run Shock Tube Problem
 
 Enter the gas-dynamic functional test directory:
 
