@@ -7,13 +7,13 @@ of this page.
 
 * Where: [土木研究大樓(土木新館)](https://goo.gl/maps/kwMsLqLwFEH2)
   台北市大安區辛亥路三段188號
-* When: (tentative) 2017/12/8 15:30-18:30
+* When: 2017/12/8 14:30-17:30
 * Instructor: [Yung-Yu Chen](mailto:yyc@solvcon.net), Taihsiang Ho
 * [Sign-up sheet](https://github.com/solvcon/seminar/issues/7).  Please create
   a Github account (assuming you don't have one yet) and leave a message to
   sign up.
 
-Last updated: 2017/11/25
+Last updated: 2017/12/7
 
 ## <a name="intro"></a>Introduction
 
@@ -23,16 +23,16 @@ developed.
 
 | Time          | Topic                             |
 | :------------ | :-------------------------------- |
-| 15:30 - 15:40 | [Overview & Introduction](#intro) |
-| 15:40 - 16:00 | [SSH Remote Login](#ssh)          |
-| 16:00 - 16:20 | [Git Basic](#git)                 |
+| 14:30 - 14:40 | [Overview & Introduction](#intro) |
+| 14:40 - 15:00 | [SSH Remote Login](#ssh)          |
+| 15:00 - 15:20 | [Git Basic](#git)                 |
+| 15:20 - 15:30 | (No-coffee) break                 |
+| 15:30 - 15:55 | [Install Anaconda](#conda)        |
+| 15:55 - 16:20 | [Development Environment](#de)    |
 | 16:20 - 16:30 | (No-coffee) break                 |
-| 16:30 - 16:55 | [Install Anaconda](#conda)        |
-| 16:55 - 17:20 | [Development Environment](#de)    |
-| 17:20 - 17:30 | (No-coffee) break                 |
-| 17:30 - 17:55 | [Build SOLVCON](#build)           |
-| 17:55 - 18:20 | [Run a Case](#run)                |
-| 18:20 - 18:30 | Q & A                             |
+| 16:30 - 16:55 | [Build SOLVCON](#build)           |
+| 16:55 - 17:20 | [Run a Case](#run)                |
+| 17:20 - 17:30 | Q & A                             |
 
 ## <a name="ssh"></a>SSH Remote Login
 
