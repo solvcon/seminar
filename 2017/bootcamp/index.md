@@ -151,7 +151,7 @@ on.  In the devenv, we install SOLVCON dependency using the following script:
 contrib/conda.sh
 ```
 
-Te above script uses `conda` and `pip` to install dependency.  Another
+The above script uses `conda` and `pip` to install dependency.  Another
 dependent package, pybind11, needs special treatment and there's a specific
 script to install it:
 
