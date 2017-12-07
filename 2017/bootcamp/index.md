@@ -134,8 +134,13 @@ segregate Python runtime for developing SOLVCON.  Run:
 contrib/devenv/create.sh
 ```
 
-It creates a conda environment in `build/env/`.  Now run `source
-build/env/start` to enable the SOLVCON-specific conda environment.
+It creates a conda environment in `build/env/`.  Now run
+
+```bash
+source build/env/start
+```
+
+to enable the SOLVCON-specific conda environment.
 
 ## <a name="build"></a>Build SOLVCON and Run Tests
 
