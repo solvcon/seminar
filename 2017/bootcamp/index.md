@@ -5,8 +5,7 @@ the most basic example.
 [Markdown version](https://github.com/solvcon/seminar/blob/gh-pages/2017/bootcamp/index.md)
 of this page.
 
-* Where: Rm 601 [土木研究大樓(土木新館)](https://goo.gl/maps/kwMsLqLwFEH2)
-  台北市大安區辛亥路三段188號
+* Where: 6F comptuer room [土木研究大樓(土木新館)](https://goo.gl/maps/kwMsLqLwFEH2) 台北市大安區辛亥路三段188號
 * When: 2017/12/8 14:30-17:30
 * Instructor: [Yung-Yu Chen](mailto:yyc@solvcon.net), Taihsiang Ho
 * [Sign-up sheet](https://github.com/solvcon/seminar/issues/7).  Please create
