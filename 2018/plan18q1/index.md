@@ -11,7 +11,7 @@ Last updated: 2018/2/22
 
 ## <a name="agenda"></a>Agenda
 
-| Time          | Topic                                    | Leader    |
+| Time          | Topic                                    | Presenter |
 | :------------ | :--------------------------------------- | --------- |
 | 15:00 - 15:25 | Dev Plan 18Q1                            | Yung-Yu   |
 | 15:25 - 15:40 | [Research Group Status Quo](#statusquo)  | Yung-Yu   |
