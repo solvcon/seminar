@@ -4,9 +4,12 @@
 
 * Where: NTU ME (Rm # TBD)
 * When: 2018/3/2 15:00-17:00
-* [Sign-up sheet](https://github.com/solvcon/seminar/issues/8).
+* [Sign-up sheet](https://github.com/solvcon/seminar/issues/8)
+* [Agenda](#agenda)
 
 Last updated: 2018/2/22
+
+## <a name="agenda"></a>Agenda
 
 | Time          | Topic                                    | Leader    |
 | :------------ | :--------------------------------------- | --------- |
