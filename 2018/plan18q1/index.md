@@ -2,7 +2,7 @@
 
 [Markdown version](https://github.com/solvcon/seminar/blob/gh-pages/2018/plan18q1/index.md) of this page.
 
-* Where: NTU ME (Rm # TBD)
+* Where: 工學院綜合大樓 727 室 (Engineering Building Rm 727)
 * When: 2018/3/2 15:00-17:00
 * [Sign-up sheet](https://github.com/solvcon/seminar/issues/8)
 * [Agenda](#agenda)
