@@ -20,4 +20,4 @@ html = """<!DOCTYPE html><html>
 </body></html>""" % html
 
 with open(sys.argv[2], "w") as fobj:
-    fobj.write(html)
+    fobj.write(html.encode('utf8'))

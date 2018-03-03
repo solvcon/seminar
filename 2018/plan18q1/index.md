@@ -11,13 +11,13 @@ Last updated: 2018/2/22
 
 ## <a name="agenda"></a>Agenda
 
-| Time          | Topic                                    | Presenter |
-| :------------ | :--------------------------------------- | --------- |
-| 15:00 - 15:25 | Dev Plan 18Q1                            | Yung-Yu   |
-| 15:25 - 15:40 | [Research Group Status Quo](#statusquo)  | Yung-Yu   |
-| 15:40 - 16:05 | Modern Virtualization Technologies       | Taihsiang |
-| 16:05 - 16:20 | Career Opportunities with Virtualization | Taihsiang |
-| 16:20 - 16:30 | [Immediate Deliverables](#deliverables)  | Yung-Yu   |
+| Time          | Topic                                     | Presenter |
+| :------------ | :---------------------------------------- | --------- |
+| 15:00 - 15:25 | [Dev Plan 18Q1](./sc-dev-plan-2018q1.pdf) | Yung-Yu   |
+| 15:25 - 15:40 | [Research Group Status Quo](#statusquo)   | Yung-Yu   |
+| 15:40 - 16:05 | Modern Virtualization Technologies        | Taihsiang |
+| 16:05 - 16:20 | Career Opportunities with Virtualization  | Taihsiang |
+| 16:20 - 16:30 | [Immediate Deliverables](#deliverables)   | Yung-Yu   |
 
 ## <a name="statusquo"></a>Research Group Status Quo
 
